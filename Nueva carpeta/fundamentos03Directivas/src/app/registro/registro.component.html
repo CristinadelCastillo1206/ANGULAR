@@ -1,0 +1,19 @@
+<h2>Formulario de registro</h2>
+<div>
+    <label>Email</label>
+    <input type="email" placeholder="Email" [(ngModel)]="correElectronico"> 
+    <br>
+    <label >Password</label>
+    <input type="password" placeholder="Password" [(ngModel)]="contrasena">
+    <br>
+    <label >Repetir password</label>
+    <input type="password" placeholder="Repetir password" [(ngModel)]="contrasenaRepetir">
+    <br>
+    <button (click)="verificar()">Registrar</button>
+    @if (correcto) {
+        <p>Registro realizado</p>
+    }@else {
+        <p>Las contraseña tienen que coincidir</p>
+    }
+    </div>
+

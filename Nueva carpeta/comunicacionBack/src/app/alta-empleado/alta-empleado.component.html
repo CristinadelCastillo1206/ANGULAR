@@ -1,0 +1,17 @@
+<h1>Alta empleado</h1>
+
+<div>
+    
+
+   <label>Nombre empleado: </label>
+   <input type="text" [(ngModel)]="e1.nombreEmpleado" placeholder="Escriba su nombre">
+   <br>
+   <label>DNI :</label>
+   <input type="text" [(ngModel)]="e1.dni"placeholder="Escriba su dni">
+   <br>
+   <label>Sueldo :</label>
+   <input type="text" [(ngModel)]="e1.sueldo">
+   <br>
+   <button (click)="altaEmpleado()">Dar de alta</button>
+   <button (click)="altaEmpleadoHP()">Dar de alta con comunicacion padre e hijo</button>
+</div>

@@ -1,0 +1,12 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+:root{
+    color-scheme:light dark;
+}
+h1{
+    color: coral;
+    font-size: 20px;
+    text-align: center;
+}

@@ -1,0 +1,11 @@
+<h1>Login</h1>
+@if (estaLogueado) {
+    <p>Bienvenido a nuestra web {{nombreUsuario}}</p>
+    <img src="https://github.com/cristinadelcastillo1206.png" alt="foto">
+}@else {
+    <p>Inicie sesion !!</p>
+    <button (click)="estaLogueado=true">Iniciar Sesion</button>
+    <app-registro></app-registro>
+}
+
+

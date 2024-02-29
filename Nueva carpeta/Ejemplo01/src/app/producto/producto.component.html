@@ -1,0 +1,26 @@
+<h1>Ingreso de producto a Stock</h1>
+<div>
+    <label>Código</label>
+    <input type="number"[(ngModel)]="codigo" />
+    <br>
+    <label>Descripcion</label>
+    <input type="text" [(ngModel)]="descripcion" />
+    <label>Coste:</label>
+    <br>
+    <label>PVP:</label>
+    <input type="number" [(ngModel)]= "pvp">
+    <br>
+    <label>Stock IDeal</label>
+    <input type="number" [(ngModel)]= "stockIdeal">
+    <br>
+    <button (click)="verificar()">Ingresar</button>
+    @if (correcto) {
+        <p>Producto dado de alta</p>
+    }
+    @else {
+        <p>verifique los datos de coste, pvp y stock mayor a cero</p>
+    }
+</div>
+    
+    
+    

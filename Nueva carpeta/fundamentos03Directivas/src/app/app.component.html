@@ -1,0 +1,17 @@
+
+@switch (perfilUsuario) {
+    @case ('usuario') {
+        <app-usuario></app-usuario>
+
+    }
+    @case ('administrador') {
+        <app-administrador></app-administrador>
+
+    }
+    @default {
+        <p>Usuario sin perfil</p>
+    }
+}
+
+<br>
+<hr>
